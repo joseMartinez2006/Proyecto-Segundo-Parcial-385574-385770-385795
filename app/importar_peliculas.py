@@ -2,7 +2,7 @@ from bson import json_util
 from pymongo import MongoClient
 
 URI = "mongodb://localhost:27020/"
-ARCHIVO = "data/sample_mflix.movies.json"
+ARCHIVO = "datos/sample_mflix.movies.json"
 TAMANO_LOTE = 500
 
 cliente = MongoClient(URI)
