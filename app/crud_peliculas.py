@@ -31,7 +31,7 @@ def insertar_pelicula():
     id_movie = ultima["id_movie"] + 1 if ultima else 1
 
     titulo = input("Titulo: ")
-    anio = int(input("Año: "))
+    año = int(input("Año: "))
     genero = input("Generos (separados por coma): ")
     director = input("Director: ")
     argumento = input("Argumento: ")
@@ -87,7 +87,7 @@ def actualizar_pelicula():
         print("Pelicula encontrada:", pelicula.get("title"))
 
         titulo = input("Nuevo titulo (Enter para conservar): ")
-        anio = input("Nuevo año (Enter para conservar): ")
+        año = input("Nuevo año (Enter para conservar): ")
         argumento = input("Nuevo argumento (Enter para conservar): ")
 
         cambios = {}
@@ -95,7 +95,7 @@ def actualizar_pelicula():
         if titulo:
             cambios["title"] = titulo
 
-        if anio:
+        if año:
             cambios["year"] = int(año)
 
         if argumento:
