@@ -5,3 +5,5 @@
 .idea/
 # No agregar archivos de datos MongoDB ni volumenes al repositorio.
 data/
+__pycache__/
+*.py[cod]
